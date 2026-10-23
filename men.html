@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Grooming Lounge — HAIR STORY Atelier</title>
+  <meta name="description"
+    content="The Men's Grooming Lounge at Hair Story. Master scissor cuts, tailored taper fades, hot eucalyptus towel beard sculpting, and Japanese scalp therapy in an exclusive dark luxury sanctuary.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+</head>
+
+<body class="men-page dark-lounge-theme">
+
+  <!-- Transparent Dark Floating Navigation Header (Blurry Glass) -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo" aria-label="Hair Story Home">
+        <span class="brand-title">HAIR STORY<span class="brand-dot">✦</span></span>
+        <span class="brand-subtitle">Professional salon</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="women.html" class="nav-link">Women</a></li>
+          <li><a href="men.html" class="nav-link active">Men</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="booking.html?category=men" class="btn-book-now-highlight">Book Now</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =====================================================================
+         FULL-SCREEN FIRST INTRO SCROLLING ANIMATION (MEN'S ATELIER)
+         4-Stage Cinematic Dissolve from [men image] sequence
+         ===================================================================== -->
+    <section class="scroll-story-wrapper" id="menScrollStorySection" style="margin-top: 0;"
+      aria-label="Men's Hair Transformation Interactive Scroll Experience">
+      <div class="scroll-story-sticky">
+
+        <!-- Fullscreen Canvas Viewport -->
+        <div class="story-canvas-container">
+          <canvas id="menScrollCanvas"></canvas>
+        </div>
+
+        <!-- Subtle ambient dark vignette for filmic depth -->
+        <div class="canvas-vignette" style="background: radial-gradient(circle at center, transparent 35%, rgba(13, 11, 10, 0.55) 75%, rgba(13, 11, 10, 0.95) 100%);"></div>
+
+        <!-- ===================================================================
+             FLOATING HIGHLIGHT NOTES (NO background card, NO description,
+             ONLY Heading and Subheading with luxury typography!)
+             =================================================================== -->
+        <div class="story-overlays-container">
+
+          <!-- Stage 1: Scissor Craft (0 - 25%) - Top Left -->
+          <div class="story-card pos-top-left active" id="menStoryCard1" data-stage="1">
+            <span class="story-card-subheading font-runethia">“Precision shear geometry.”</span>
+            <h2 class="story-card-heading">The Scissor Architecture</h2>
+          </div>
+
+          <!-- Stage 2: Shadow Fade & Clippers (25 - 50%) - Bottom Right -->
+          <div class="story-card pos-bottom-right" id="menStoryCard2" data-stage="2">
+            <span class="story-card-subheading">“Sub-millimeter graduation.”</span>
+            <h2 class="story-card-heading">The Shadow Taper Fade</h2>
+          </div>
+
+          <!-- Stage 3: Clean Profile (50 - 75%) - Top Right -->
+          <div class="story-card pos-top-right" id="menStoryCard3" data-stage="3">
+            <span class="story-card-subheading font-runethia">“Flawless from every profile.”</span>
+            <h2 class="story-card-heading">The Sculpted Contour</h2>
+          </div>
+
+          <!-- Stage 4: Haute Finish (75 - 100%) - Left Side Subject Space -->
+          <div class="story-card pos-mid-left" id="menStoryCard4" data-stage="4">
+            <span class="story-card-subheading">“Confidence Tailored In Obsidian.”</span>
+            <h2 class="story-card-heading">The Modern Gentleman</h2>
+            <div class="story-card-actions">
+              <a href="booking.html?category=men" class="btn-book-now-highlight">Book Private Chair ✦</a>
+              <a href="#lounge-ethos" class="btn-luxury-outline" style="border-color: rgba(212, 175, 55, 0.6); color: #F5C542;">Explore Lounge ↓</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Visual Feature Banner / Lounge Ethos -->
+    <section class="container" id="lounge-ethos" style="padding: 6rem 1.5rem 3rem;">
+      <div class="dark-glass-card" style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 2.5rem; align-items: center;">
+        <div style="padding: 3.5rem 3rem;">
+          <span class="section-tag" style="color: #D4AF37;">Masculine Architecture</span>
+          <h2 style="font-family: var(--font-serif-couture); font-size: 2.5rem; color: #FFFFFF; line-height: 1.2; margin-bottom: 1rem;">
+            The Executive Taper Fade &amp; Hot Towel Ritual
+          </h2>
+          <span style="font-family: var(--font-script-runethia); font-size: 2.3rem; color: #F5C542; display: block; margin-bottom: 1.2rem;">
+            “Flawless geometry from every angle.”
+          </span>
+          <p style="font-size: 0.98rem; color: #C4BBB0; line-height: 1.85; margin-bottom: 2rem;">
+            Calibrated low/mid shadow fades and precise scissor shear texturing tailored to cranial geometry. Paired with warm sandalwood essential oils, straight-razor nape cleaning, and cooling botanical clay scalp wash.
+          </p>
+          <div style="display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap;">
+            <a href="booking.html?service=mens-sculpt" class="btn-book-now-highlight">Book This Session ✦</a>
+            <span style="font-size: 0.85rem; color: #D4AF37; letter-spacing: 0.08em; text-transform: uppercase;">50 Mins • ₹950</span>
+          </div>
+        </div>
+        <div style="height: 520px; position: relative;">
+          <img src="/images/indian-mens-grooming.jpg" alt="Men's Executive Taper &amp; Scissor Sculpt" style="width: 100%; height: 100%; object-fit: cover; border-left: 1px solid rgba(212, 175, 55, 0.2);">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-Step Bespoke Gentleman's Ritual -->
+    <section class="container" style="padding: 3rem 1.5rem 5rem;">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
+        <span class="section-tag" style="color: #D4AF37;">The Atelier Discipline</span>
+        <h2 style="font-family: var(--font-serif-couture); font-size: 2.4rem; color: #FFFFFF;">
+          The Three-Stage Grooming Ritual
+        </h2>
+        <p style="font-size: 0.95rem; color: #9C9388; margin-top: 0.5rem;">
+          Every appointment is an unhurried, multisensory reset designed for maximum distinction.
+        </p>
+      </div>
+
+      <div class="ritual-steps-grid">
+        <div class="ritual-step-card">
+          <div class="ritual-step-num">I.</div>
+          <h3 class="ritual-step-title">Geometry &amp; Sculpting</h3>
+          <p class="ritual-step-desc">
+            Cranial bone-structure consultation followed by dry scissor mapping, graduation, and ultra-smooth shadow taper fade execution.
+          </p>
+        </div>
+
+        <div class="ritual-step-card">
+          <div class="ritual-step-num">II.</div>
+          <h3 class="ritual-step-title">Eucalyptus &amp; Razor Craft</h3>
+          <p class="ritual-step-desc">
+            Steamed eucalyptus hot towel to open pores, sandalwood pre-shave elixir, and surgical-edge straight-razor cheek and neckline detailing.
+          </p>
+        </div>
+
+        <div class="ritual-step-card">
+          <div class="ritual-step-num">III.</div>
+          <h3 class="ritual-step-title">Scalp Detox &amp; Single-Malt</h3>
+          <p class="ritual-step-desc">
+            Organic Japanese scalp wash with menthol circulation massage, styling with matte clay, and your choice of single-malt scotch or pour-over coffee.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         12-CARD CRANIAL GEOMETRY & HAIRSTYLE LOOKBOOK
+         Mouse-Scroll Smooth Horizontal Ribbon with Parallax Depth
+         ===================================================================== -->
+    <section class="men-styles-scroll-section" id="menStylesSection" aria-label="12 Bespoke Men's Hairstyles Lookbook">
+      <div class="men-styles-sticky">
+
+        <div class="men-styles-header">
+          <div class="men-styles-header-left">
+            <span class="section-tag" style="color: #D4AF37;">Cranial Architecture • 12 Signature Cuts</span>
+            <h2 style="font-family: var(--font-serif-couture); font-size: clamp(2rem, 3.8vw, 3rem); color: #FFFFFF; line-height: 1.15; margin: 0.2rem 0;">
+              The Hairstyle Architecture Lookbook
+            </h2>
+            <span style="font-family: var(--font-script-priestacy); font-size: clamp(1.8rem, 2.8vw, 2.4rem); color: #F5C542; display: block;">
+              “One Face. Twelve Bespoke Transformations.”
+            </span>
+          </div>
+
+          <div class="men-styles-header-right">
+            <div class="styles-counter">
+              <span id="stylesCounterCurrent" class="styles-counter-num">01</span> / 12
+            </div>
+            <div class="styles-progress-rail" aria-hidden="true">
+              <div class="styles-progress-bar" id="stylesScrollProgress"></div>
+            </div>
+            <div style="display: flex; gap: 0.6rem;">
+              <button class="styles-nav-btn" id="stylesSlidePrev" aria-label="Slide to Previous Hairstyle">←</button>
+              <button class="styles-nav-btn" id="stylesSlideNext" aria-label="Slide to Next Hairstyle">→</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="men-styles-track-wrapper">
+          <div class="men-styles-track" id="menStylesTrack">
+
+            <!-- Card 01 -->
+            <a href="booking.html?service=mens-sculpt&style=parisian-quiff" class="style-card" data-index="1" aria-label="Parisian Quiff">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-1.jpg" alt="Parisian Quiff" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">01</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Parisian Quiff</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 02 -->
+            <a href="booking.html?service=mens-sculpt&style=curtain-flow" class="style-card" data-index="2" aria-label="Curtain Flow">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-2.jpg" alt="Curtain Flow" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">02</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Curtain Flow</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 03 -->
+            <a href="booking.html?service=mens-sculpt&style=french-crop" class="style-card" data-index="3" aria-label="French Crop">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-3.jpg" alt="French Crop" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">03</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">French Crop</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 04 -->
+            <a href="booking.html?service=mens-sculpt&style=euro-crop" class="style-card" data-index="4" aria-label="Euro Crop">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-4.jpg" alt="Euro Crop" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">04</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Euro Crop</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 05 -->
+            <a href="booking.html?service=mens-sculpt&style=drop-fade" class="style-card" data-index="5" aria-label="Drop Fade">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-5.jpg" alt="Drop Fade" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">05</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Drop Fade</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 06 -->
+            <a href="booking.html?service=mens-sculpt&style=street-shag" class="style-card" data-index="6" aria-label="Street Shag">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-6.jpg" alt="Street Shag" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">06</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Street Shag</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 07 -->
+            <a href="booking.html?service=mens-sculpt&style=pompadour" class="style-card" data-index="7" aria-label="Pompadour">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-1.jpg" alt="Pompadour" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">07</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Pompadour</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 08 -->
+            <a href="booking.html?service=mens-sculpt&style=split-taper" class="style-card" data-index="8" aria-label="Split Taper">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-2.jpg" alt="Split Taper" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">08</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Split Taper</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 09 -->
+            <a href="booking.html?service=mens-sculpt&style=buzz-fade" class="style-card" data-index="9" aria-label="Buzz Fade">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-3.jpg" alt="Buzz Fade" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">09</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Buzz Fade</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 10 -->
+            <a href="booking.html?service=mens-sculpt&style=kyoto-fringe" class="style-card" data-index="10" aria-label="Kyoto Fringe">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-4.jpg" alt="Kyoto Fringe" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">10</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Kyoto Fringe</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 11 -->
+            <a href="booking.html?service=mens-sculpt&style=low-fade" class="style-card" data-index="11" aria-label="Low Fade">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-5.jpg" alt="Low Fade" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">11</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Low Fade</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Card 12 -->
+            <a href="booking.html?service=mens-sculpt&style=classic-taper" class="style-card" data-index="12" aria-label="Classic Taper">
+              <div class="style-card-full-image">
+                <img src="/images/menstyles/men-style-6.jpg" alt="Classic Taper" class="style-card-img" loading="lazy">
+                <div class="style-card-overlay">
+                  <span class="style-card-num">12</span>
+                  <div class="style-card-bottom-info">
+                    <h3 class="style-card-name">Classic Taper</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Men's Treatment Menu & Pricing -->
+    <section id="treatment-menu" style="padding: 5rem 1.5rem 7rem; background: #0A0908; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+      <div class="container-narrow">
+        <div style="text-align: center; margin-bottom: 3.5rem;">
+          <span class="section-tag" style="color: #D4AF37;">Treatment Catalogue</span>
+          <h2 style="font-family: var(--font-serif-couture); font-size: 2.4rem; color: #FFFFFF;">
+            Men's Grooming Menu &amp; Pricing
+          </h2>
+          <p style="font-size: 0.92rem; color: #8C8275; margin-top: 0.5rem;">
+            Transparent pricing. Bespoke consultations and beverage service included with all sessions.
+          </p>
+        </div>
+
+        <div class="menu-items-list">
+
+          <div class="dark-menu-row">
+            <div class="menu-item-left">
+              <h3 class="menu-item-name">The Executive Shear Cut &amp; Taper Fade</h3>
+              <div class="menu-item-tagline">Clean masculine silhouette, texturizing &amp; taper</div>
+              <p class="menu-item-desc">
+                Custom scissor architecture, shadow fade, hot eucalyptus neck towel shave, matte clay finish, and scalp wash.
+              </p>
+            </div>
+            <div class="menu-item-right" style="text-align: right; min-width: 130px;">
+              <div class="menu-item-price">₹950</div>
+              <div class="menu-item-duration">50 Mins</div>
+              <a href="booking.html?service=mens-sculpt" class="btn-book-now-highlight" style="margin-top: 0.8rem; display: inline-block;">Book</a>
+            </div>
+          </div>
+
+          <div class="dark-menu-row">
+            <div class="menu-item-left">
+              <h3 class="menu-item-name">Men's Complete Hair &amp; Beard Royal Treatment</h3>
+              <div class="menu-item-tagline">The ultimate gentleman's restoration</div>
+              <p class="menu-item-desc">
+                Precision haircut, straight razor beard shaping, warm sandalwood oil facial massage, cold botanical pore-closing towel, and scalp detox.
+              </p>
+            </div>
+            <div class="menu-item-right" style="text-align: right; min-width: 130px;">
+              <div class="menu-item-price">₹1,650</div>
+              <div class="menu-item-duration">80 Mins</div>
+              <a href="booking.html?service=mens-royal" class="btn-book-now-highlight" style="margin-top: 0.8rem; display: inline-block;">Book</a>
+            </div>
+          </div>
+
+          <div class="dark-menu-row">
+            <div class="menu-item-left">
+              <h3 class="menu-item-name">Botanical Scalp Detox &amp; Follicle Reset</h3>
+              <div class="menu-item-tagline">Micro-mist, pore purification &amp; density stimulation</div>
+              <p class="menu-item-desc">
+                Exfoliates buildup, unclogs follicles with organic menthol and tea tree elixirs, and stimulates natural root density with acupressure massage.
+              </p>
+            </div>
+            <div class="menu-item-right" style="text-align: right; min-width: 130px;">
+              <div class="menu-item-price">₹1,250</div>
+              <div class="menu-item-duration">45 Mins</div>
+              <a href="booking.html?service=scalp-spa" class="btn-book-now-highlight" style="margin-top: 0.8rem; display: inline-block;">Book</a>
+            </div>
+          </div>
+
+          <div class="dark-menu-row">
+            <div class="menu-item-left">
+              <h3 class="menu-item-name">Matte Grey Camo &amp; Beard Tone Refinement</h3>
+              <div class="menu-item-tagline">Subtle natural gray blending with demi-permanent pigments</div>
+              <p class="menu-item-desc">
+                Ammonia-free, 10-minute demi-permanent treatment that reduces contrast and softens grey hair naturally without looking dyed or brassy.
+              </p>
+            </div>
+            <div class="menu-item-right" style="text-align: right; min-width: 130px;">
+              <div class="menu-item-price">₹900</div>
+              <div class="menu-item-duration">30 Mins</div>
+              <a href="booking.html?service=grey-camo" class="btn-book-now-highlight" style="margin-top: 0.8rem; display: inline-block;">Book</a>
+            </div>
+          </div>
+
+          <div class="dark-menu-row">
+            <div class="menu-item-left">
+              <h3 class="menu-item-name">Hot Sandalwood Straight-Razor Beard Sculpt</h3>
+              <div class="menu-item-tagline">Traditional lather, hot towel &amp; razor sharp edge</div>
+              <p class="menu-item-desc">
+                Beard de-bulking, shear balancing, triple hot towel therapy, and clean straight-razor edging with soothing cedarwood aftershave balm.
+              </p>
+            </div>
+            <div class="menu-item-right" style="text-align: right; min-width: 130px;">
+              <div class="menu-item-price">₹750</div>
+              <div class="menu-item-duration">35 Mins</div>
+              <a href="booking.html?service=mens-royal" class="btn-book-now-highlight" style="margin-top: 0.8rem; display: inline-block;">Book</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking CTA Section -->
+    <section style="padding: 6rem 1.5rem; background: #0D0B0A;">
+      <div class="container">
+        <div class="cta-box" style="padding: 4.5rem 2rem; text-align: center; border-radius: 18px;">
+          <span style="font-family: var(--font-script-priestacy); font-size: 2.4rem; color: #F5C542; display: block; margin-bottom: 0.8rem;">
+            Reserve your leather chair
+          </span>
+          <h2 class="section-heading-large" style="color: #FFFFFF; margin-bottom: 1rem;">
+            Experience The Men's Lounge
+          </h2>
+          <p style="color: #C4BBB0; max-width: 580px; margin: 0 auto 2.5rem; line-height: 1.8; font-size: 1rem;">
+            Enjoy our complimentary pour-over Kyoto coffee, single-malt scotch, or sparkling botanical water during your private session.
+          </p>
+          <a href="booking.html?category=men" class="btn-book-now-highlight" style="padding: 1.1rem 3rem; font-size: 0.95rem;">
+            Book Private Session ✦
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (Dark Theme Edition) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-title">HAIR STORY<span class="brand-dot">✦</span></span>
+            <span class="brand-subtitle" style="color: #D4AF37;">Professional salon</span>
+          </a>
+          <p class="footer-brand-p">
+            The Men's Grooming Lounge at Hair Story. Master scissor cuts, tailored taper fades, and Japanese scalp therapy in an exclusive dark luxury sanctuary.
+          </p>
+        </div>
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Lounge Hours</h4>
+          <div class="atelier-hours-item"><span>Tue – Thu</span><span>9:00 AM – 7:30 PM</span></div>
+          <div class="atelier-hours-item"><span>Fri – Sat</span><span>8:30 AM – 8:00 PM</span></div>
+          <div class="atelier-hours-item"><span>Sunday</span><span>10:00 AM – 5:00 PM</span></div>
+        </div>
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Private Concierge</h4>
+          <p style="font-size: 0.85rem; color: #A99F92; line-height: 1.5;">3rd floor, Indu Dreams, Unit no. 308, Rajarampuri 3rd Lane, Kolhapur, Maharashtra 416008</p>
+          <p style="font-size: 0.85rem; color: #D4AF37; margin: 0.5rem 0 1.2rem;">
+            <a href="tel:8625811170" style="color: inherit; text-decoration: none;">+91 86258 11170</a>, 
+            <a href="tel:8624958373" style="color: inherit; text-decoration: none;">+91 86249 58373</a>
+          </p>
+          <a href="booking.html?category=men" class="btn-book-now-highlight" style="width: 100%; text-align: center;">Book Now</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 HAIR STORY ATELIER. All Rights Reserved.</div>
+        <div>Men's Private Lounge Collection • Kolhapur</div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/men-scroll-story.js"></script>
+  <script type="module" src="/js/men-styles-slider.js"></script>
+</body>
+
+</html>

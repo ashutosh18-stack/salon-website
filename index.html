@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAIR STORY — Haute Coiffure & Luxury Unisex Atelier</title>
+  <meta name="description"
+    content="Hair Story is an ultra-luxury unisex salon atelier. Experience our signature 360-degree hair transformation, bespoke sculpting, and organic botanical rituals.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+</head>
+
+<body class="home-page">
+
+  <!-- Transparent Floating Luxury Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo" aria-label="Hair Story Home">
+        <span class="brand-title">HAIR STORY</span>
+        <span class="brand-subtitle">Professional salon</span>
+      </a>
+
+      <!-- Proper Nav as requested: Home, Women, Men, Products, About, Contact -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="women.html" class="nav-link">Women</a></li>
+          <li><a href="men.html" class="nav-link">Men</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Highlight Button: Book Now -->
+        <a href="booking.html" class="btn-book-now-highlight">Book Now</a>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =====================================================================
+         FULL-SCREEN FIRST INTRO SCROLLING ANIMATION (ezgif-2c89d6df11669799-jpg)
+         Starts immediately at the top of the homepage full screen!
+         ===================================================================== -->
+    <section class="scroll-story-wrapper" id="scrollStorySection" style="margin-top: 0;"
+      aria-label="Hair Transformation Interactive Scroll Experience">
+      <div class="scroll-story-sticky">
+
+        <!-- Preloader HUD for silky 60fps frame scrubbing -->
+        <div class="story-loader-hud" id="storyLoaderHud">
+          <div class="loader-crest">
+            <div class="loader-crest-ring"></div>
+            <span style="position: absolute;">✦</span>
+          </div>
+          <div class="loader-status-text">CRAFTING 360° TRANSFORMATION</div>
+          <div class="loader-progress-track">
+            <div class="loader-progress-bar" id="loaderProgressBar"></div>
+          </div>
+          <div style="font-size: 0.72rem; color: var(--gold-dark); letter-spacing: 0.1em;" id="loaderPercent">0%</div>
+        </div>
+
+        <!-- Fullscreen Canvas Viewport -->
+        <div class="story-canvas-container">
+          <canvas id="scrollStoryCanvas"></canvas>
+        </div>
+
+        <!-- Subtle ambient vignette -->
+        <div class="canvas-vignette"></div>
+
+        <!-- ===================================================================
+             FLOATING HIGHLIGHT NOTES (NO background card, NO description,
+             ONLY Heading and Subheading with luxury typography!)
+             =================================================================== -->
+        <div class="story-overlays-container">
+
+          <!-- Position 1: Top Left (Frames 1-40) -->
+          <div class="story-card pos-top-left active" id="storyCard1" data-stage="1">
+            <span class="story-card-subheading font-runethia">“Every strand carries your signature.”</span>
+            <h2 class="story-card-heading">Raw Texture & Identity</h2>
+          </div>
+
+          <!-- Position 2: Bottom Right (Frames 40-85) -->
+          <div class="story-card pos-bottom-right" id="storyCard2" data-stage="2">
+            <span class="story-card-subheading">“Crafted with couture discipline.”</span>
+            <h2 class="story-card-heading">Precision Sculpting</h2>
+          </div>
+
+          <!-- Position 3: Bottom Left (Frames 85-130) -->
+          <div class="story-card pos-bottom-left" id="storyCard3" data-stage="3">
+            <span class="story-card-subheading font-runethia">“Radiance born from within.”</span>
+            <h2 class="story-card-heading">Botanical Silk Glaze</h2>
+          </div>
+
+          <!-- Position 4: Top Right (Frames 130-170) -->
+          <div class="story-card pos-top-right" id="storyCard4" data-stage="4">
+            <span class="story-card-subheading">“Effortless luxury in motion.”</span>
+            <h2 class="story-card-heading">The Parisian Blowout</h2>
+          </div>
+
+          <!-- Position 5: Center Stage / Reveal (Frames 170-200) -->
+          <div class="story-card pos-center-stage" id="storyCard5" data-stage="5">
+            <span class="story-card-subheading font-runethia">“Your Story, Perfectly Told.”</span>
+            <h2 class="story-card-heading">Confidence Reimagined</h2>
+            <div class="story-card-actions">
+              <a href="booking.html" class="btn-book-now-highlight">Book Now ✦</a>
+              <a href="women.html" class="btn-luxury-outline">Explore Atelier</a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- Brand Manifesto Section -->
+    <section class="section-manifesto">
+      <div class="container">
+        <div class="manifesto-grid">
+          <div class="manifesto-image-wrap">
+            <img src="/images/salon-interior.jpg" alt="Hair Story Luxury Atelier Interior" class="manifesto-main-img"
+              loading="lazy">
+            <div class="manifesto-floating-badge" id="manifestoBadge" aria-label="Haute Coiffure Badge">
+              <div class="badge-row badge-row-1">
+                <span class="script-tag">Haute Coiffure</span>
+              </div>
+              <div class="badge-row badge-row-2">
+                <div class="badge-title">HAIR STORY ATELIER</div>
+              </div>
+              <div class="badge-row badge-row-3">
+                <p class="badge-sub">Sunlit Travertine Arches &amp; Private Suites</p>
+              </div>
+              <div class="badge-row badge-row-4">
+                <div class="badge-amenity">
+                  <span class="amenity-sparkle">✦</span>
+                  <span>100% Bespoke Private Sessions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="manifesto-content">
+            <span class="section-tag">A New Era of Unisex Elegance</span>
+            <h2 class="section-heading-large">We Believe Hair Is An Intimate Living Canvas</h2>
+            <span class="manifesto-script-accent">“Beauty without gender, craft without compromise.”</span>
+            <p class="section-body-text">
+              At Hair Story, hair styling transcends routine maintenance. It is a dialogue between human geometry,
+              personal charisma, and Parisian haute couture discipline. We reject mass-production salons in favor of
+              dedicated one-on-one rituals.
+            </p>
+            <p class="section-body-text">
+              Every client is welcomed into warm sun-drenched travertine sanctuaries, served reserve French champagne or
+              artisanal espresso, and matched with master artisans who hone their trade across Paris, Milan, and Tokyo.
+            </p>
+
+            <div class="manifesto-pillars">
+              <div class="pillar-item">
+                <h4><i>✦</i> Clean European Botanicals</h4>
+                <p>100% cruelty-free organic formulas infused with plant collagen, silk peptides, and rare botanical
+                  extracts.</p>
+              </div>
+              <div class="pillar-item">
+                <h4><i>✦</i> Sculptural Precision</h4>
+                <p>Customized dry-cutting geometry crafted to maintain bounce and effortless styling weeks after your
+                  visit.</p>
+              </div>
+            </div>
+
+            <div class="manifesto-actions" style="margin-top: 2.5rem; display: flex; gap: 1rem;">
+              <a href="about.html" class="btn-luxury-outline">Our Philosophy</a>
+              <a href="booking.html" class="btn-book-now-highlight">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Offerings Dual Showcase (Women & Men) -->
+    <section class="section-services">
+      <div class="container">
+        <header class="section-header-center">
+          <span class="section-tag">Dedicated Ateliers</span>
+          <h2 class="section-heading-large">Tailored For Women & Men</h2>
+          <p class="section-body-text">
+            Explore bespoke coiffure sculpted for feminine radiance or sharp masculine architecture.
+          </p>
+        </header>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;">
+
+          <!-- Women Atelier Card -->
+          <article class="service-card reveal-init" style="position: relative; overflow: hidden; border-radius: 16px;">
+            <div class="service-card-media" style="height: 340px;">
+              <img src="/images/indian-salon-styling.jpg" alt="Women's Haute Coiffure" loading="lazy">
+              <span class="service-category-badge">Women's Atelier</span>
+            </div>
+            <div class="service-card-body" style="padding: 2.5rem;">
+              <h3 class="service-title">Women's Haute Coiffure</h3>
+              <div class="service-card-script">Luminous Balayage & Parisian Waves</div>
+              <p class="service-desc">
+                From champagne hand-painted highlights to silk protein botox and signature sweeping blowouts that turn
+                heads wherever you go.
+              </p>
+              <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                <a href="women.html" class="btn-luxury-outline">Explore Women's Menu</a>
+                <a href="booking.html?category=women" class="btn-book-now-highlight">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Men Atelier Card -->
+          <article class="service-card reveal-init" style="position: relative; overflow: hidden; border-radius: 16px;">
+            <div class="service-card-media" style="height: 340px;">
+              <img src="/images/indian-mens-grooming.jpg" alt="Men's Architecture & Grooming" loading="lazy">
+              <span class="service-category-badge">Men's Lounge</span>
+            </div>
+            <div class="service-card-body" style="padding: 2.5rem;">
+              <h3 class="service-title">Men's Grooming Lounge</h3>
+              <div class="service-card-script">Architectural Fades & Beard Sculpting</div>
+              <p class="service-desc">
+                Master barber shear sculpting, clean taper fades, hot eucalyptus towel treatments, straight razor beard
+                contours, and scalp detox.
+              </p>
+              <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                <a href="men.html" class="btn-luxury-outline">Explore Men's Menu</a>
+                <a href="booking.html?category=men" class="btn-book-now-highlight">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- VIP Client Testimonials -->
+    <section class="section-testimonials">
+      <div class="container">
+        <header class="section-header-center">
+          <span class="section-tag">Client Acclaim</span>
+          <h2 class="section-heading-large">Stories Told By Those Who Wear Us</h2>
+        </header>
+
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card reveal-init">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “Hair Story is unlike any other salon in Maharashtra. The tranquil travertine arches, the warmth,
+              and the way their stylist sculpted my layers without losing length is pure fine art.”
+            </p>
+            <div class="testimonial-author-meta">
+              <img src="/images/indian-salon-styling.jpg" alt="Ananya Deshmukh" class="author-avatar" style="object-fit: cover;">
+              <div>
+                <div class="author-name">Ananya Deshmukh</div>
+                <div class="author-service">Haute Balayage & Silk Blowout</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-init">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “Finally, a luxury sanctuary in Kolhapur where men's grooming is given the highest reverence. The straight
+              razor beard work and royal taper fade are completely untouchable.”
+            </p>
+            <div class="testimonial-author-meta">
+              <img src="/images/indian-mens-grooming.jpg" alt="Rohan Patil" class="author-avatar" style="object-fit: cover;">
+              <div>
+                <div class="author-name">Rohan Patil</div>
+                <div class="author-service">Executive Sculpt & Beard Atelier</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-init">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “The Botanical Head Spa reset my entire mind and body. My scalp feels completely regenerated and my hair
+              has a healthy bounce and natural shine I haven’t seen in years.”
+            </p>
+            <div class="testimonial-author-meta">
+              <img src="/images/indian-head-spa.jpg" alt="Priya Kulkarni" class="author-avatar" style="object-fit: cover;">
+              <div>
+                <div class="author-name">Priya Kulkarni</div>
+                <div class="author-service">Botanical Head Spa & Silk Gloss</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Salon Tour & Atmosphere -->
+    <section class="section-atmosphere reveal-init">
+      <div class="container">
+        <div class="atmosphere-showcase">
+          <img src="/images/indian-hair-ritual.jpg" alt="Hair Story Interior Experience" loading="lazy">
+          <div class="atmosphere-overlay">
+            <span class="atmosphere-script">The Atelier Experience</span>
+            <h2 class="atmosphere-title">A Sanctuary Of Sunlit Calm & Unhurried Craft</h2>
+            <p style="max-width: 620px; font-size: 1rem; color: #EFE8DE; line-height: 1.7;">
+              Custom leather chairs, ambient Ayurvedic botanical oils, and private suites ensuring your
+              appointment is a restorative luxury retreat.
+            </p>
+            <div class="atmosphere-amenities">
+              <span>✦ Organic Botanical Oils</span>
+              <span>✦ Artisanal Coffee & Tea Bar</span>
+              <span>✦ Dyson Supersonic Pro</span>
+              <span>✦ Private Acoustic Suites</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP Booking CTA Banner -->
+    <section class="section-booking-cta">
+      <div class="container">
+        <div class="cta-box">
+          <span class="cta-script-lead">Begin Your Hair Story</span>
+          <h2 class="section-heading-large" style="margin-bottom: 1.2rem;">Reserve Your Private Chair Today</h2>
+          <p class="section-body-text" style="max-width: 580px; margin: 0 auto 2.5rem;">
+            Appointments are limited each day to ensure uninterrupted, one-on-one attention from your chosen master
+            artisan.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap;">
+            <a href="booking.html" class="btn-book-now-highlight" style="padding: 1rem 2.5rem; font-size: 0.9rem;">Book
+              Now ✦</a>
+            <a href="contact.html" class="btn-luxury-outline">Contact Concierge</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Haute Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-title">HAIR STORY<span class="brand-dot">✦</span></span>
+            <span class="brand-subtitle" style="color: #D4AF37;">Professional salon</span>
+          </a>
+          <p class="footer-brand-p">
+            Dedicated to the art of hair transformation. A unisex light-aesthetic sanctuary blending Parisian couture
+            discipline with clean botanical science.
+          </p>
+
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="women.html">Women's Atelier</a></li>
+            <li><a href="men.html">Men's Lounge</a></li>
+            <li><a href="products.html">Botanical Products</a></li>
+            <li><a href="about.html">About Philosophy</a></li>
+            <li><a href="contact.html">Concierge & Locations</a></li>
+            <li><a href="booking.html" style="color: #D4AF37; font-weight: 700;">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Atelier Hours</h4>
+          <div class="atelier-hours-item">
+            <span>Tue – Thu</span>
+            <span>9:00 AM – 7:30 PM</span>
+          </div>
+          <div class="atelier-hours-item">
+            <span>Friday</span>
+            <span>9:00 AM – 8:30 PM</span>
+          </div>
+          <div class="atelier-hours-item">
+            <span>Saturday</span>
+            <span>8:30 AM – 7:00 PM</span>
+          </div>
+          <div class="atelier-hours-item">
+            <span>Sunday</span>
+            <span>10:00 AM – 5:00 PM</span>
+          </div>
+          <div class="atelier-hours-item" style="border: none;">
+            <span>Monday</span>
+            <span style="color: #D4AF37;">VIP Private Bookings Only</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Private Concierge</h4>
+          <p style="font-size: 0.85rem; color: #A99F92; margin-bottom: 0.8rem; line-height: 1.6;">
+            3rd floor, Indu Dreams, Unit no. 308,<br>
+            Rajarampuri 3rd Lane, Kolhapur, Maharashtra 416008
+          </p>
+          <p style="font-size: 0.85rem; color: #D4AF37; margin-bottom: 0.5rem;">
+            concierge@hairstoryatelier.com
+          </p>
+          <p style="font-size: 0.85rem; color: #DDD4C8; margin-bottom: 1.5rem; line-height: 1.6;">
+            Direct VIP: <a href="tel:8625811170" style="color: #D4AF37; text-decoration: none;">+91 86258 11170</a>, 
+            <a href="tel:8624958373" style="color: #D4AF37; text-decoration: none;">+91 86249 58373</a>
+          </p>
+          <a href="booking.html" class="btn-book-now-highlight" style="width: 100%; text-align: center;">Book Now</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 HAIR STORY ATELIER. All Rights Reserved. Kolhapur Luxury Edition.</div>
+        <div style="display: flex; gap: 2rem;">
+          <a href="#" style="color: inherit;">Privacy Policy</a>
+          <a href="#" style="color: inherit;">Terms of Service</a>
+          <a href="booking.html" style="color: #D4AF37;">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/scroll-story.js"></script>
+</body>
+
+</html>

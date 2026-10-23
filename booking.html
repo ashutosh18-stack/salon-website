@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP Online Reservation — HAIR STORY Atelier</title>
+  <meta name="description" content="Reserve your bespoke unisex appointment at Hair Story Atelier. Select your master artisan, signature services, and customized amenities.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement -->
+  <aside class="top-announcement">
+    <div class="top-announcement-inner">
+      <span class="badge-pill">PRIVATE RESERVATIONS</span>
+      <span>Complimentary Champagne, Valet Parking & Scalp Analysis Included</span>
+    </div>
+    <button class="audio-toggle-btn">
+      <span class="sound-waves"><span class="sound-bar"></span><span class="sound-bar"></span><span class="sound-bar"></span></span>
+      <span class="sound-label">Ambiance: Off</span>
+    </button>
+  </aside>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-title">HAIR STORY<span class="brand-dot">✦</span></span>
+        <span class="brand-subtitle">Haute Coiffure & Unisex Atelier</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="women.html" class="nav-link">Women</a></li>
+          <li><a href="men.html" class="nav-link">Men</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="booking.html" class="btn-book-now-highlight active">Book Now</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="editorial-eyebrow">VIP Reservation</span>
+        <h1 class="page-hero-title">Reserve Your Atelier Experience</h1>
+        <p style="font-family: var(--font-script-priestacy); font-size: 2.2rem; color: var(--gold-primary); margin-bottom: 1rem;">
+          Your private transformation begins here.
+        </p>
+        <p class="section-body-text" style="max-width: 650px; margin: 0 auto;">
+          Follow our interactive 4-step concierge to customize your services, select your artisan, and confirm your private chair.
+        </p>
+      </div>
+    </section>
+
+    <!-- Booking Wizard Container -->
+    <section class="container">
+      <div class="booking-wizard-card">
+
+        <!-- Steps Navigation Indicator -->
+        <div class="booking-steps-nav">
+          <div class="step-indicator active" data-step="1">
+            <div class="step-bubble">1</div>
+            <div class="step-text">Rituals</div>
+          </div>
+          <div class="step-indicator" data-step="2">
+            <div class="step-bubble">2</div>
+            <div class="step-text">Artisan</div>
+          </div>
+          <div class="step-indicator" data-step="3">
+            <div class="step-bubble">3</div>
+            <div class="step-text">Date & Time</div>
+          </div>
+          <div class="step-indicator" data-step="4">
+            <div class="step-bubble">4</div>
+            <div class="step-text">Guest Details</div>
+          </div>
+        </div>
+
+        <!-- Live Totals Bar -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--gold-border); border-radius: var(--radius-sm); padding: 1rem 1.8rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); font-weight: 600;">Estimated Investment:</span>
+            <div style="font-family: var(--font-display-modern); font-size: 1.6rem; font-weight: 700; color: var(--text-hero);" id="bookingTotalPrice">₹1,800</div>
+          </div>
+          <div>
+            <span style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); font-weight: 600;">Session Duration:</span>
+            <div style="font-family: var(--font-display-modern); font-size: 1.2rem; font-weight: 600; color: var(--gold-dark);" id="bookingTotalDuration">75 mins</div>
+          </div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">
+            Includes: Scalp Diagnosis + Welcome Refreshment
+          </div>
+        </div>
+
+        <!-- The Booking Form -->
+        <form id="luxuryBookingForm">
+
+          <!-- STEP 1: Select Signature Rituals -->
+          <div class="booking-step-panel" data-step="1" style="display: block;">
+            <h3 style="font-family: var(--font-serif-couture); font-size: 1.8rem; color: var(--text-hero); margin-bottom: 0.5rem;">Select Your Desired Rituals</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem;">You may select multiple treatments to create a comprehensive transformation package.</p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.5rem;">
+              
+              <!-- Service 1 -->
+              <label style="display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 1.5rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; transition: all var(--transition-fast); background: #FFFFFF;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <input type="checkbox" class="booking-service-check" data-code="signature-cut" data-name="The Signature Hair Story Cut & Blowout" data-price="1800" data-duration="75" checked style="accent-color: var(--gold-primary); transform: scale(1.3);">
+                  <div>
+                    <strong style="color: var(--text-heading); font-size: 1.05rem;">The Signature Hair Story Cut & Blowout</strong>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Face-contouring dry sculpt with iconic blowout (75 mins)</div>
+                  </div>
+                </div>
+                <div style="font-family: var(--font-display-modern); font-weight: 700; color: var(--text-hero); font-size: 1.1rem;">₹1,800</div>
+              </label>
+
+              <!-- Service 2 -->
+              <label style="display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 1.5rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; transition: all var(--transition-fast); background: #FFFFFF;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <input type="checkbox" class="booking-service-check" data-code="balayage" data-name="Champagne Multi-Dimensional Balayage" data-price="5500" data-duration="180" style="accent-color: var(--gold-primary); transform: scale(1.3);">
+                  <div>
+                    <strong style="color: var(--text-heading); font-size: 1.05rem;">Champagne Multi-Dimensional Balayage</strong>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Hand-painted French clay balayage + double silk glaze (180 mins)</div>
+                  </div>
+                </div>
+                <div style="font-family: var(--font-display-modern); font-weight: 700; color: var(--text-hero); font-size: 1.1rem;">₹5,500</div>
+              </label>
+
+              <!-- Service 3 -->
+              <label style="display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 1.5rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; transition: all var(--transition-fast); background: #FFFFFF;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <input type="checkbox" class="booking-service-check" data-code="scalp-spa" data-name="Botanical Waterfall Scalp Head Spa" data-price="2800" data-duration="75" style="accent-color: var(--gold-primary); transform: scale(1.3);">
+                  <div>
+                    <strong style="color: var(--text-heading); font-size: 1.05rem;">Botanical Waterfall Scalp Head Spa</strong>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Ayurvedic warm herbal oils, waterfall cascade, shiatsu massage (75 mins)</div>
+                  </div>
+                </div>
+                <div style="font-family: var(--font-display-modern); font-weight: 700; color: var(--text-hero); font-size: 1.1rem;">₹2,800</div>
+              </label>
+
+              <!-- Service 4 -->
+              <label style="display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 1.5rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; transition: all var(--transition-fast); background: #FFFFFF;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <input type="checkbox" class="booking-service-check" data-code="mens-sculpt" data-name="Men's Executive Shear Sculpt & Taper" data-price="950" data-duration="50" style="accent-color: var(--gold-primary); transform: scale(1.3);">
+                  <div>
+                    <strong style="color: var(--text-heading); font-size: 1.05rem;">Men's Executive Shear Sculpt & Taper</strong>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Precision fade, hot towel shave, botanical scalp wash (50 mins)</div>
+                  </div>
+                </div>
+                <div style="font-family: var(--font-display-modern); font-weight: 700; color: var(--text-hero); font-size: 1.1rem;">₹950</div>
+              </label>
+
+              <!-- Service 5 -->
+              <label style="display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 1.5rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; transition: all var(--transition-fast); background: #FFFFFF;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <input type="checkbox" class="booking-service-check" data-code="silk-botox" data-name="Raw Silk Protein Botox Infusion" data-price="4200" data-duration="120" style="accent-color: var(--gold-primary); transform: scale(1.3);">
+                  <div>
+                    <strong style="color: var(--text-heading); font-size: 1.05rem;">Raw Silk Protein Botox Infusion</strong>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Zero formaldehyde anti-frizz molecular repair (120 mins)</div>
+                  </div>
+                </div>
+                <div style="font-family: var(--font-display-modern); font-weight: 700; color: var(--text-hero); font-size: 1.1rem;">₹4,200</div>
+              </label>
+
+            </div>
+
+            <div style="text-align: right;">
+              <button type="button" onclick="goToBookingStep(2)" class="btn-luxury-primary">Continue: Choose Artisan ➔</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Choose Master Artisan -->
+          <div class="booking-step-panel" data-step="2" style="display: none;">
+            <h3 style="font-family: var(--font-serif-couture); font-size: 1.8rem; color: var(--text-hero); margin-bottom: 0.5rem;">Select Preferred Artisan</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem;">Every artisan is master-certified. You may also select 'First Available Master'.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; margin-bottom: 2.5rem;">
+              
+              <label style="display: flex; align-items: center; gap: 1rem; padding: 1.2rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; background: #FFFFFF;">
+                <input type="radio" name="artisan" value="First Available Master" checked style="accent-color: var(--gold-primary);">
+                <div>
+                  <strong>First Available Master Stylist</strong>
+                  <div style="font-size: 0.78rem; color: var(--gold-dark);">Priority booking with matching specialist</div>
+                </div>
+              </label>
+
+              <label style="display: flex; align-items: center; gap: 1rem; padding: 1.2rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; background: #FFFFFF;">
+                <input type="radio" name="artisan" value="Julien Vance (Creative Director)" style="accent-color: var(--gold-primary);">
+                <div>
+                  <strong>Julien Vance</strong>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Creative Director • Precision Sculpt Master</div>
+                </div>
+              </label>
+
+              <label style="display: flex; align-items: center; gap: 1rem; padding: 1.2rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; background: #FFFFFF;">
+                <input type="radio" name="artisan" value="Chloe Martin (Balayage Lead)" style="accent-color: var(--gold-primary);">
+                <div>
+                  <strong>Chloe Martin</strong>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Master Colorist • Balayage Lead</div>
+                </div>
+              </label>
+
+              <label style="display: flex; align-items: center; gap: 1rem; padding: 1.2rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; background: #FFFFFF;">
+                <input type="radio" name="artisan" value="Stefan Vance (Men's Architecture)" style="accent-color: var(--gold-primary);">
+                <div>
+                  <strong>Stefan Vance</strong>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Master Barber • Men's Silhouette Director</div>
+                </div>
+              </label>
+
+              <label style="display: flex; align-items: center; gap: 1rem; padding: 1.2rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; background: #FFFFFF;">
+                <input type="radio" name="artisan" value="Mei Tanaka (Head Spa Lead)" style="accent-color: var(--gold-primary);">
+                <div>
+                  <strong>Mei Tanaka</strong>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Holistic Trichologist • Scalp Spa Lead</div>
+                </div>
+              </label>
+
+              <label style="display: flex; align-items: center; gap: 1rem; padding: 1.2rem; border: 1px solid var(--border-hairline); border-radius: 8px; cursor: pointer; background: #FFFFFF;">
+                <input type="radio" name="artisan" value="Camille Laurent (Texture Maestro)" style="accent-color: var(--gold-primary);">
+                <div>
+                  <strong>Camille Laurent</strong>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Senior Stylist • Red Carpet Waves</div>
+                </div>
+              </label>
+
+            </div>
+
+            <div style="display: flex; justify-content: space-between;">
+              <button type="button" onclick="goToBookingStep(1)" class="btn-luxury-outline">➔ Back: Services</button>
+              <button type="button" onclick="goToBookingStep(3)" class="btn-luxury-primary">Continue: Date & Time ➔</button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Choose Date & Time Slot -->
+          <div class="booking-step-panel" data-step="3" style="display: none;">
+            <h3 style="font-family: var(--font-serif-couture); font-size: 1.8rem; color: var(--text-hero); margin-bottom: 0.5rem;">Select Date & Time</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem;">Available slots are updated in real time based on chair availability.</p>
+
+            <div class="form-group-luxury">
+              <label class="form-label-luxury">Preferred Appointment Date</label>
+              <input type="date" class="form-input-luxury" id="bookingDate" value="2026-10-20">
+            </div>
+
+            <div class="form-group-luxury">
+              <label class="form-label-luxury">Available Time Slots</label>
+              <input type="hidden" id="selectedTimeSlot" value="11:00 AM">
+              <div class="time-slots-grid">
+                <button type="button" class="time-slot-btn" data-time="09:30 AM">09:30 AM</button>
+                <button type="button" class="time-slot-btn selected" data-time="11:00 AM">11:00 AM</button>
+                <button type="button" class="time-slot-btn" data-time="01:30 PM">01:30 PM</button>
+                <button type="button" class="time-slot-btn" data-time="03:00 PM">03:00 PM</button>
+                <button type="button" class="time-slot-btn" data-time="04:30 PM">04:30 PM</button>
+                <button type="button" class="time-slot-btn" data-time="06:00 PM">06:00 PM</button>
+                <button type="button" class="time-slot-btn" data-time="07:15 PM">07:15 PM</button>
+                <button type="button" class="time-slot-btn" data-time="08:00 PM">08:00 PM</button>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-top: 2.5rem;">
+              <button type="button" onclick="goToBookingStep(2)" class="btn-luxury-outline">➔ Back: Artisan</button>
+              <button type="button" onclick="goToBookingStep(4)" class="btn-luxury-primary">Continue: Guest Details ➔</button>
+            </div>
+          </div>
+
+          <!-- STEP 4: Guest Details & Amenities -->
+          <div class="booking-step-panel" data-step="4" style="display: none;">
+            <h3 style="font-family: var(--font-serif-couture); font-size: 1.8rem; color: var(--text-hero); margin-bottom: 0.5rem;">Distinguished Guest Information</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem;">Please provide your contact information to receive your VIP reservation voucher.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+              <div class="form-group-luxury">
+                <label class="form-label-luxury">Full Name *</label>
+                <input type="text" id="guestName" required class="form-input-luxury" placeholder="e.g. Ananya Deshmukh">
+              </div>
+              <div class="form-group-luxury">
+                <label class="form-label-luxury">Mobile Phone (For SMS Confirmation) *</label>
+                <input type="tel" id="guestPhone" required class="form-input-luxury" placeholder="+91 86258 11170">
+              </div>
+            </div>
+
+            <div class="form-group-luxury">
+              <label class="form-label-luxury">Email Address *</label>
+              <input type="email" id="guestEmail" required class="form-input-luxury" placeholder="vivienne@example.com">
+            </div>
+
+            <div class="form-group-luxury">
+              <label class="form-label-luxury">Complimentary Welcome Beverage</label>
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 0.5rem;">
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; cursor: pointer;">
+                  <input type="radio" name="beverage" value="Laurent-Perrier Brut Champagne" checked style="accent-color: var(--gold-primary);">
+                  Laurent-Perrier Champagne
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; cursor: pointer;">
+                  <input type="radio" name="beverage" value="Artisanal Kyoto Pour-Over Espresso" style="accent-color: var(--gold-primary);">
+                  Artisanal Pour-Over
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; cursor: pointer;">
+                  <input type="radio" name="beverage" value="Sparkling Citrus Botanical Elixir" style="accent-color: var(--gold-primary);">
+                  Botanical Sparkling Elixir
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group-luxury">
+              <label class="form-label-luxury">Special Preferences or Scalp Sensitivities</label>
+              <textarea id="guestNotes" class="form-textarea-luxury" rows="3" placeholder="e.g. Silent chair preference requested; sensitive scalp to thermal heat..."></textarea>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-top: 2.5rem;">
+              <button type="button" onclick="goToBookingStep(3)" class="btn-luxury-outline">➔ Back: Date & Time</button>
+              <button type="submit" class="btn-luxury-primary">Confirm & Authorize VIP Pass ✦</button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- Confirmation Voucher Output Container -->
+        <div id="bookingConfirmationVoucher" style="display: none;"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-title">HAIR STORY<span class="brand-dot">✦</span></span>
+            <span class="brand-subtitle" style="color: #D4AF37;">Haute Coiffure & Unisex Atelier</span>
+          </a>
+          <p class="footer-brand-p">
+            Unisex light-aesthetic atelier. Master cuts, balayage, and Japanese scalp spa rituals.
+          </p>
+        </div>
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Atelier Home</a></li>
+            <li><a href="services.html">Treatment Menu</a></li>
+            <li><a href="lookbook.html">Lookbook</a></li>
+            <li><a href="story.html">Our Philosophy</a></li>
+            <li><a href="artisans.html">Master Artisans</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Atelier Hours</h4>
+          <div class="atelier-hours-item"><span>Tue – Thu</span><span>9:00 AM – 7:30 PM</span></div>
+          <div class="atelier-hours-item"><span>Fri – Sat</span><span>8:30 AM – 8:00 PM</span></div>
+          <div class="atelier-hours-item"><span>Sunday</span><span>10:00 AM – 5:00 PM</span></div>
+        </div>
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Concierge</h4>
+          <p style="font-size: 0.85rem; color: #A99F92; line-height: 1.5;">3rd floor, Indu Dreams, Unit no. 308, Rajarampuri 3rd Lane, Kolhapur, Maharashtra 416008</p>
+          <p style="font-size: 0.85rem; color: #D4AF37; margin: 0.5rem 0 1.2rem;">
+            <a href="tel:8625811170" style="color: inherit; text-decoration: none;">+91 86258 11170</a>, 
+            <a href="tel:8624958373" style="color: inherit; text-decoration: none;">+91 86249 58373</a>
+          </p>
+          <a href="tel:8625811170" class="btn-luxury-outline" style="width: 100%; text-align: center;">Direct VIP Line</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 HAIR STORY ATELIER. All Rights Reserved.</div>
+        <div>Kolhapur Luxury Salon Collection</div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/booking.js"></script>
+</body>
+</html>
